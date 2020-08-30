@@ -9,6 +9,12 @@
   "bin": {
     "7ohm": "./src/index.js"
   },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "src/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/georgyfarniev/7ohm.git"
