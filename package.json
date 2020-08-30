@@ -1,0 +1,22 @@
+{
+  "name": "7ohm",
+  "version": "1.0.0",
+  "description": "Cross-platform concurrency without external dependencies",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "7ohm": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgyfarniev/7ohm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgyfarniev/7ohm/issues"
+  },
+  "homepage": "https://github.com/georgyfarniev/7ohm#readme"
+}
