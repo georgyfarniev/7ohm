@@ -22,7 +22,6 @@ function executeCommands(commands, onComplete) {
 
 module.exports = executeCommands
 
-
 /* Command line execution code */
 const TOOL_NAME = '7ohm';
 const HELP_TEXT = `Usage: ${TOOL_NAME} "command1" "command2" ...`

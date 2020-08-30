@@ -1,9 +1,12 @@
-# 7ohm - Run processes via npm with no cost of external dependencies
+# 7ohm - Run parallel processes with no cost of external dependencies
 
 # Motivation
 Super simple package that allows you to run concurrent processes across multiple shell types,
-similar to concurrently, but without burden of external dependencies for functionality that useless
-in 99% cases.
+similar to [concurrently](https://www.npmjs.com/package/concurrently), but without burden of
+external dependencies for functionality that useless in 99% cases.
+
+So if you just want to run several processes in parallel on multiple platforms and don't want to
+bring extra dependencies, then it's for you.
 
 # Installation
 ```shell
