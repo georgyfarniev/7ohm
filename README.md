@@ -1,5 +1,9 @@
 # 7ohm - Run parallel processes with no cost of external dependencies
 
+<a href="https://www.npmjs.com/package/7ohm" alt="Downloads">
+  <img src="https://img.shields.io/npm/dm/7ohm" />
+</a>
+
 # Motivation
 Super simple package that allows you to run concurrent processes across multiple shell types,
 similar to [concurrently](https://www.npmjs.com/package/concurrently), but without burden of
