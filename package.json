@@ -15,6 +15,13 @@
   "files": [
     "src/*.js"
   ],
+  "keywords": [
+    "concurrent",
+    "parallel",
+    "development",
+    "cross-platform",
+    "nodeps"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/georgyfarniev/7ohm.git"
