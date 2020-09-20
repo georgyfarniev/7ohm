@@ -13,7 +13,10 @@ function executeCommands(commands, onComplete) {
   const processes = commands.map((command) => {
     const [ executable, ...options ] = command.split(' ').map(c => c.trim())
     const cmd = spawn(executable, options, { shell: true, stdio: 'inherit' })
-    cmd.on('close', () => (--nRunning < 1) && onComplete())
+    cmd.on('close', (code) => {
+      console.log(`${command} exited with code ${code}`);
+      if(--nRunning < 1) onComplete()
+    })
     return cmd
   })
 
