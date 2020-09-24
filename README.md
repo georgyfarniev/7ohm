@@ -37,6 +37,15 @@ In package.json scripts section:
 }
 ```
 
+...or even better (supports shortcuts for package manager scripts of npm, yarn and pnpm now!):
+```json
+"scripts": {
+  "command1": "command1 arg1 arg2",
+  "command2": "command1 arg1 arg2",
+  "dev": "7ohm npm:command1 npm:command2"
+}
+```
+
 # Contribution
 
 If you want to make PR, please keep it simple and NO EXTRA DEPENDENCIES. Feel free to report any
