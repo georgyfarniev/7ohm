@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const { spawn } = require('child_process')
+const { name, version } = require('../package.json')
 
 const PM_SCRIPTS_SHORTCUT_REGEX = /^(npm|pnpm|yarn)\:[a-z0-9]+$/
 const PM_SCRIPT_DIVIDER = ':'
@@ -37,8 +38,7 @@ function expandCommand(command) {
 module.exports = executeCommands
 
 /* Command line execution code */
-const TOOL_NAME = '7ohm';
-const HELP_TEXT = `Usage: ${TOOL_NAME} "command1" "command2" ...`
+const HELP_TEXT = `${name} (v: ${version}) usage: ${name}  command1 command2 ...`
 const HELP_TRIGGERS = ['-h', '--help']
 const TERMINATE_SIGNALS = ['SIGINT', 'SIGTERM', 'SIGHUP']
 
@@ -52,10 +52,10 @@ function main() {
 
   const cmdText = commands.map((cmd) => `\`${cmd}'`).join(', ')
 
-  console.log(`\n[${TOOL_NAME}: executing listed commands]:`, cmdText, '\n')
+  console.log(`\n[${name}: executing listed commands]:`, cmdText, '\n')
 
   const terminate = executeCommands(commands, () => {
-    console.log(`\n[${TOOL_NAME}: all commands finished execution, exiting]`)
+    console.log(`\n[${name}: all commands finished execution, exiting]`)
     process.exit()
   })
 
