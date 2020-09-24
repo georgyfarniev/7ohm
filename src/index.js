@@ -3,7 +3,7 @@
 const { spawn } = require('child_process')
 const { name, version } = require('../package.json')
 
-const PM_SCRIPTS_SHORTCUT_REGEX = /^(npm|pnpm|yarn)\:[a-z0-9]+$/
+const PM_SCRIPTS_SHORTCUT_REGEX = /^(npm|pnpm|yarn):\w+$/
 const PM_SCRIPT_DIVIDER = ':'
 
 /**
